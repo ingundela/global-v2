@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+
+body,
+html {
+	font-family: 'Poppins', sans-serif;
+
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #303d48;
+	font-weight: 300;
+	margin: 0 auto;
+	position: relative;
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiase;
+}
+
+.container {
+	max-width: 1210px;
+	padding: 0;
+}
+
+li,
+p {
+	font-size: 1rem;
+	display: block;
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+
+a {
+	color: #1a1a1a;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: inherit;
+	line-height: 1.3;
+}
+
+.spinner-ctn {
+	position: absolute;
+	top: 0;
+	background-color: #fff;
+	height: 100vh;
+	width: 100%;
+	z-index: 999999;
+	text-align: center;
+}
+
+.no-scroll {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.spinner {
+	width: 300px;
+	height: 40px;
+	text-align: center;
+	margin: 400px auto;
+}
+
+.spinner div {
+	height: 100%;
+	width: 6px;
+	background-color: #75a463;
+	display: inline-block;
+	animation: animeDiv 1.2s infinite ease-in-out;
+}
+
+@keyframes animeDiv {
+
+	0%,
+	100%,
+	40% {
+		transform: scaleY(.4);
+	}
+
+	20% {
+		transform: scaleY(1);
+	}
+}
+
+.spinner .rectagle2 {
+	animation-delay: -1.1s;
+}
+
+.spinner .rectagle3 {
+	animation-delay: -1s;
+}
+
+.spinner .rectagle4 {
+	animation-delay: -.9s;
+}
+
+.spinner .rectagle5 {
+	animation-delay: -.8s;
+}
+
+.navbar {
+	background-color: #000;
+	padding: 10px 0;
+}
+
+.navbar-toggler:focus {
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+
+.navbar-brand {
+	width: 150px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	letter-spacing: 1px;
+	line-height: 1.3;
+	text-transform: capitalize;
+	text-transform: capitalize;
+	transition: all .3s ease 0s;
+	display: block;
+	padding-right: 0;
+	font-weight: 600;
+	font-size: 1rem;
+	margin-left: 20px;
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+	font-weight: 700;
+	color: #fff723;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link:hover {
+	font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff723;
+}
+
+.navbar-toggler span {
+	color: #fff;
+	font-size: 25px;
+	border: none;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.navbar-light .navbar-toggler {
+	color: #ffff;
+	border-color: none;
+}
+
+.navbar-toggler {
+	padding: .25rem .75rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: none;
+	border-radius: .25rem;
+}
+
+.navbar.compressed {
+	padding: 5px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: all .38s ease;
+	-moz-transition: all .38s ease;
+	-ms-transition: all .38s ease;
+	transition: all .38s ease;
+	border-bottom: 1px solid #fff723;
+}
+
+/*---dropdown menu---*/
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background: #000;
+	border: 1px solid #0a1129;
+	min-width: 570px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.dropdown-content a:hover {
+	color: #fff723;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.yellow_icon {
+	color: #fff723;
+}
+
+/*=========HERO============*/
+#hero {
+	background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .6)), url('../img/global_hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 700px;
+	z-index: 1;
+}
+
+.hero_caption {
+	max-width: 75%;
+	margin: 20% 0;
+	color: #fff;
+}
+
+.title_hero {
+	color: #fff;
+	font-size: 2.5rem;
+}
+
+.hero_h5 {
+	line-height: 1.7;
+	font-weight: 300 !important;
+}
+
+.title_hero_top {
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.sub_title_home {
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.btn_hero {
+	background-color: #001d62;
+	padding: 15px 50px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	color: #fff723;
+	font-weight: 700;
+	margin-top: 20px;
+	letter-spacing: 1px;
+}
+
+.btn_hero:hover {
+	background-color: #001d62;
+	color: #fff723;
+}
+
+.input_search {
+	padding: 20px 30px;
+	margin-top: 10px;
+}
+
+/*=========benefits=============*/
+
+.benefits {
+	background-color: #f0f3f5;
+}
+
+.section_space {
+	padding: 50px 0;
+}
+
+.title_section {
+	font-size: 2rem;
+	color: #303d48;
+}
+
+.benefits_content {
+	max-width: 60%;
+	margin: auto;
+	background-color: #fff;
+	padding: 30px;
+}
+
+.btn_all {
+	background-color: #001d62;
+	padding: 15px 50px;
+	border-radius: 30px;
+	text-transform: capitalize;
+	color: #fff723;
+	font-weight: 700;
+	margin-top: 20px;
+	letter-spacing: 1px;
+}
+
+.btn_all:hover {
+	background-color: #001d62;
+	color: #fff723;
+}
+
+.section_p_title_bottom {
+	max-width: 65%;
+	margin: auto;
+}
+
+/*============CURSOS============*/
+
+.cursos .section_p_title_bottom {
+	margin-bottom: 50px;
+}
+
+.curso_box {
+	padding: 0 20px;
+}
+
+.course_list {
+	margin-top: 20px;
+}
+
+.course_list i {
+	color: #001d62;
+}
+
+.course_list img {
+	width: 20px;
+	display: inline;
+	padding-right: 5px;
+}
+
+.btn_curso {
+	background-color: #fff723;
+	padding: 15px 30px;
+	border-radius: 30px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.card-img-top {
+	height: 200px;
+}
+
+.card {
+	border-bottom: 4px solid #001d62;
+}
+
+.curso_box p {
+	margin-bottom: 20px;
+}
+
+.curso_box i {
+	color: #303d48;
+}
+
+.curso_box .btn_curso:hover {
+	color: #fff723;
+}
+
+.list_courses h4 {
+	font-size: 1.3rem;
+}
+
+.saber_mais_cursos {
+	color: #001d62;
+	text-transform: capitalize;
+	margin-top: 12px;
+	font-weight: 400;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	color: #000 !important;
+}
+
+.carousel-control-next-icon:after {
+	content: '>';
+	font-size: 55px;
+	color: #001d62;
+}
+
+.carousel-control-prev-icon:after {
+	content: '<';
+	font-size: 55px;
+	color: #001d62;
+}
+
+/*===list courses====*/
+
+.list_courses {
+	padding-bottom: 50px;
+}
+
+/*---why us----*/
+.why_us {
+	padding-bottom: 70px;
+}
+
+.why_content {
+	margin-top: 30px;
+}
+
+.why_content img {
+	width: 100px;
+	margin-bottom: 12px;
+}
+
+.why_content h4 {
+	text-transform: capitalize;
+	color: #303d48;
+}
+
+/*==footer===*/
+
+.footer {
+	padding: 80px 0;
+	background-color: #000;
+	color: #fff;
+}
+
+.footer h3 {
+	text-decoration: underline;
+	text-transform: capitalize;
+}
+
+.list_unstyled {
+	padding-left: 0;
+}
+
+.list_unstyled i,
+.footer i {
+	color: #fff723;
+}
+
+.social_links {
+	display: inline-block;
+}
+
+.footer_cursos a {
+	color: #fff;
+}
+
+.social_links li {
+	display: inline;
+	margin-right: 10px;
+}
+
+.social_links i {
+	font-size: 2rem;
+}
+
+.sb_mozmedia {
+	color: #000;
+	background-color: #fff723;
+	padding: 10px 0;
+}
+
+/*========= media quieres ==========*/
+@media (min-width: 320px) and (max-width: 750px) {
+	.navbar-brand img {
+		width: 120px;
+		margin-left: 20px;
+	}
+
+	.hero_caption {
+		max-width: 100%;
+		margin: 40% 0;
+		text-align: center;
+	}
+
+	.title_hero {
+		font-size: 1.5rem;
+	}
+
+	.hero_h5 {
+		font-size: 1rem;
+	}
+
+	.title_hero_top {
+		font-size: 1.3rem;
+	}
+
+	.sub_title_home {
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+
+	#hero {
+		height: 550px;
+	}
+
+	.benefits_content {
+		max-width: 100%;
+		margin: auto;
+		background-color: #fff;
+		padding: 30px;
+	}
+
+	.title_section {
+		font-size: 1.7rem;
+	}
+
+	.section_p_title_bottom {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	.cursos {
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.cursos img {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.footer {
+		padding: 30px 20px;
+	}
+
+	.footer h3 {
+		padding-top: 20px;
+	}
+}
+
+/*==========SOBRE NÓS===========*/
+#hero_sobre {
+	background: url('../img/About_hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 600px;
+	z-index: 1;
+}
+
+.bem_vindo {
+	color: #fff723;
+	background: rgba(0, 29, 98, 0.5);
+	padding: 40px;
+	text-transform: uppercase;
+}
+
+.hero_caption_about {
+	max-width: 50%;
+	margin: 20% 0;
+	color: #fff;
+}
+
+.missao_valores_content h5 {
+	color: #fff723;
+	background-color: #001d62;
+	padding: 30px;
+}
+
+.missao_valores_content .media-body {
+	border: 1px solid #ccdbff;
+	height: 400px;
+	padding: 20px;
+}
+
+.why_us.why_rest_pages {}
+
+@media (min-width: 320px) and (max-width: 750px) {
+	.hero_caption_about {
+		max-width: 100%;
+		margin: 70% 0;
+		color: #fff;
+	}
+
+	.sobre_content {
+		padding: 30px 20px;
+	}
+}
+
+/*==================== higiene & saude ===================*/
+
+#other_pages {
+	background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .6)),
+		url('../img/global_hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+}
+
+.sobre_content {
+	background-color: #f0f3f5;
+}
+
+.all_pages_header_content {
+	color: #fff723;
+}
+
+.hero_caption_all_pages {
+	max-width: 64%;
+	margin: 15% 0;
+	color: #fff;
+}
+
+.higiene_content {
+	margin-top: 20px;
+}
+
+.higiene_content i {
+	color: #001d62;
+	font-size: 2rem;
+}
+
+.box_model {
+	margin-top: 50px;
+}
+
+.modulos_content {
+	margin-bottom: 30px;
+}
+
+.color_blue {
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(0, 29, 98, 1);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(0, 29, 98, 1);
+	box-shadow: 10px 10px 5px -6px rgba(0, 29, 98, 1);
+}
+
+.modulo_list li {
+	padding-left: 20px;
+}
+
+.color_orange {
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(204, 197, 0, 1);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(204, 197, 0, 1);
+	box-shadow: 10px 10px 5px -6px rgba(204, 197, 0, 1);
+}

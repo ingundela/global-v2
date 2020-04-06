@@ -160,7 +160,7 @@ h5 {
 }
 
 .navbar-toggler span {
-	color: #fff;
+	color: #fff723;
 	font-size: 25px;
 	border: none;
 	margin-right: 20px;
@@ -168,7 +168,7 @@ h5 {
 }
 
 .navbar-light .navbar-toggler {
-	color: #ffff;
+	color: #fff723;
 	border-color: none;
 }
 
@@ -672,4 +672,30 @@ h5 {
 }
 
 
-@media (min-width: 320px) and (max-width: 750px) {}
+@media (min-width: 320px) and (max-width: 750px) {
+
+	.hero_caption_all_pages {
+		max-width: 100%;
+		margin: 60% 0;
+		color: #fff;
+	}
+
+	.mobile_view {
+		margin-top: 40px;
+	}
+
+	.dest_content {
+		padding: 20px 20px;
+	}
+
+	.box_model_title {
+		padding: 30px 0 0 20px;
+	}
+
+	.box_model {
+		margin-top: 10px;
+	}
+
+
+
+}
